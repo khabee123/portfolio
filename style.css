@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.body-about {
+    background: #000 url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logo img {
+    width: 120px;
+}
+.navbar ul {
+    background: #231f20;
+    width: 120px;
+    text-align: center;
+    border-bottom-right-radius: 25px;
+    margin-top: -10px;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li a {
+    display: inline-block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.navbar ul li a:hover{
+    color:#019791 ;
+}
+.navbar ul .active a{
+    color:#019791 ;
+}
+.social a{
+    padding: 5px;
+    text-decoration: none;
+}
+.social a:hover i{
+    color: #019791;
+    transform: scale(1.05);
+}
+.social a i {
+    color: #777;
+    font-size: 1.2rem;
+    transition: transform 300ms;
+}
+.banner {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 50vh;
+}
+.banner h5{
+    font-size: 1.8rem;
+    color: #ccc;
+    font-family: 'Lobster', cursive;
+}
+.banner h1 {
+    font-size: 6rem;
+    color: #eee;
+    font-family: 'Staatliches', cursive;
+}
+.banner h1 span {
+    background: rgba(1, 151, 145, 0.5);
+}
+.banner p {
+    font-size: 1.5rem;
+    color: #ccc;
+    font-family: 'Lobster', cursive;
+}
+.about {
+    color: #fff;
+    max-width: 400px;
+    width: 90%;
+    margin: 20vh auto;
+    background: rgba(1, 151, 145, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.about h4 {
+    color: #eee;
+    font-size: 2rem;
+    font-family: 'lobster', cursive;
+    padding: 20px 0;
+    text-align: center;
+}
+.about p {
+    color: #eee;
+    text-align: justify;
+    line-height: 1.7rem;
+}
+/*for small screens*/
+@media screen and (max-width:460px){
+    .body-about {
+        background-size: 150%;
+        background-position: center;
+    }
+    .navbar {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .navbar ul {
+        border-bottom-left-radius: 25px;
+        border-bottom-left-radius: 0;
+    }
+    .banner h1 {
+        font-size: 4rem;
+    }
+}
